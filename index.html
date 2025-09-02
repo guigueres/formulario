@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Cadastro para a familia Macedo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="imagens/form-icone.png">
 </head>
 <body>
-    
+    <div class="caixa">
+        <form class="formulario">
+            <h1>Cadastro</h1>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+            <label>Gênero</label>
+            <div class="genero">
+                <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+            </div>
+
+            <label>Interesses</label>
+            <div class="interesses">
+                <label><input type="checkbox" name="interesse" value="esportes"> Esportes</label>
+                <label><input type="checkbox" name="interesse" value="musica"> Música</label>
+                <label><input type="checkbox" name="interesse" value="viagem"> Viagem</label>
+            </div>
+
+            <label for="pais">País</label>
+            <select id="pais" name="pais">
+                <option value="brasil">Brasil</option>
+                <option value="portugal">Portugal</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="argentina">Argentina</option>
+            </select>
+
+            <label for="nascimento">Data de Nascimento</label>
+            <input type="date" id="nascimento" name="nascimento">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 </html>
